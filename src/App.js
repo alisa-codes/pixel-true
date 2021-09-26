@@ -13,6 +13,8 @@ import 'aos/dist/aos.css';
 import Loading from './Components/Shared/Loader/Loader';
 const Home = lazy(() => import ('./Pages/Home/Home'))
 const CaseStudies = lazy(() => import ('./Pages/CaseStudies/CaseStudies'))
+const Pricing = lazy(() => import ('./Pages/Pricing/Pricing'))
+
 
 function App() {
   useEffect(() => {
@@ -29,6 +31,8 @@ function App() {
         <Switch>
           <Route exact path ='/' component={Home} />
           <Route exact path ='/case-studies' component={CaseStudies} />
+          <Route exact path ='/pricing' component={Pricing} />
+
 
         </Switch>
       </Suspense>

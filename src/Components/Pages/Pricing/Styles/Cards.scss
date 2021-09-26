@@ -1,0 +1,40 @@
+.price-cards{
+    padding: 100px 0px;
+    padding-top: 170px;
+    h1{
+        font-size: 2.4rem;
+        color: #50B8DC;
+    }
+    p{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        margin-top: 140px;
+    }
+}
+@media(max-width:1100px){
+   .price-cards{
+       .cards{
+           flex-direction: column;
+           align-items: center;
+           margin-top: 40px;
+           
+       }
+   }
+}
+@media(max-width:500px){
+    .price-cards{
+        padding-top: 130px;
+        padding-bottom: 30px;
+        h1{
+            font-size: 24px;
+
+        }
+    p{
+        font-size: 17px;
+    }
+    }
+}
