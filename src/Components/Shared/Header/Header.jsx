@@ -39,19 +39,19 @@ function Header(props){
            <Link to="case-studies">
               Case Studies
            </Link>
-           <Link to="case-studies">
+           <Link to="pricing">
                Pricing
            </Link>
-           <Link to="case-studies">
+           <Link to="our-work">
                Our Work
            </Link>
-           <Link to="case-studies">
+           <Link to="our-platform">
                Our Platform
            </Link>
-           <Link to="case-studies">
+           <Link to="more">
             More
            </Link>
-           <Link to="case-studies">
+           <Link to="login">
              Login
            </Link>
            <StyledButton link="Schedule Demo"/>

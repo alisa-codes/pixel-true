@@ -7,6 +7,10 @@
 body,html{
   overflow-x: hidden;
 }
+body{
+  background-color: #0f123d;
+
+}
 .App {
   text-align: center;
   background-color: #0f123d;

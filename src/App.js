@@ -1,16 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import React,{useEffect} from 'react';
-import Banner from './Components/Pages/Home/Banner';
-import Parts from './Components/Pages/Home/Parts';
-import Designers from './Components/Pages/Home/Designers';
-import Custom from './Components/Pages/Home/Custom';
-import Works from './Components/Pages/Home/Works';
-import Try from './Components/Shared/Try/Try';
-import Wall from './Components/Pages/Home/Wall';
-import Header from './Components/Shared/Header/Header';
-import 'aos/dist/aos.css';
+import { lazy, Suspense,useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import Loading from './Components/Shared/Loader/Loader';
+const Home = lazy(() => import ('./Pages/Home/Home'))
+const CaseStudies = lazy(() => import ('./Pages/CaseStudies/CaseStudies'))
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -21,14 +24,15 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header />
-    <Banner />
-    <Designers />
-    <Parts />
-    <Works />
-    <Custom />
-    <Wall />
-    <Try />
+    <Router>
+      <Suspense fallback={<Loading />}>
+        <Switch>
+          <Route exact path ='/' component={Home} />
+          <Route exact path ='/case-studies' component={CaseStudies} />
+
+        </Switch>
+      </Suspense>
+    </Router>
     </div>
   );
 }

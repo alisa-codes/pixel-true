@@ -1,0 +1,22 @@
+.cases{
+    padding: 100px 0px;
+    padding-top: 200px;
+    h1{
+        color: #50b8dc;
+        font-size: 2.4rem;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:500px){
+    .cases{
+        padding: 50px 0px;
+        padding-top: 100px;
+        h1{
+            font-size: 24px;
+        }
+    }
+}
