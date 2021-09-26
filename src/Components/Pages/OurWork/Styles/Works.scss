@@ -1,0 +1,73 @@
+.our-works{
+    padding: 200px 0px;
+    padding-bottom: 50px;
+    @media(max-width:900px){
+      padding: 100px 0px;
+    padding-bottom: 20px;
+    }
+    h1{
+        font-size: 2.4rem;
+  color: rgba(212,214,255,.95);
+       
+        margin-bottom: 40px;
+        @media(max-width:500px){
+         font-size: 24px;
+         margin-bottom: 20px;
+          }
+    }
+    .react-tabs {
+        display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   &__tab-list {
+       display: flex;
+       justify-content: center;
+       background-color: #2025722f;
+       width: 85%;
+       border-radius: 10px;
+       flex-wrap: wrap;
+      
+   }
+   &__tab{
+       margin: 0px 10px;
+       padding: 20px 50px;
+       font-size: 17px;
+       letter-spacing: 1px;
+       cursor: pointer;
+       position: relative;
+       justify-content: center;
+       display: flex;
+    
+       &--selected{
+           &::after{
+            position: absolute;
+            bottom: -25px;
+            width: 70%;
+            height: 25px;
+
+            -webkit-clip-path: polygon(11% 48%,88% 47%,100% 100%,0 100%);
+            clip-path: polygon(11% 48%,88% 47%,100% 100%,0 100%);
+            margin: -2% auto auto;
+            content: '';
+           
+            transition: .8s ease-in-out;
+            transform: rotate(180deg);
+            background-color: #FF5886;
+            @media(max-width:500px){
+                bottom: -10px;
+            }
+           }
+       }
+   }
+    }
+}
+.mainpanel{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    @media(max-width:500px){
+       margin-top: 10px;
+      }
+}

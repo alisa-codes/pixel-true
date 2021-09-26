@@ -9,13 +9,14 @@
     align-items: center;
     flex-direction: column;
     padding-top: 130px;
+    
     margin: 30px;
     @media(max-width:1250px){
         margin: 10px;
     }
     &:hover{
         background-image: url(../../../Assets/backgrounds/banner.webp);
-        transition: 2s ease-in-out;
+        transition: .5s ease-in-out;
         background-position: center;
     }
     

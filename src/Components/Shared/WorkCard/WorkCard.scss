@@ -1,0 +1,62 @@
+.work-card{
+    width: 500px;
+    cursor: pointer;
+    margin: 30px;
+   @media(max-width:1121px){
+       width: 60%;
+       margin: 20px 0px;
+   }
+     
+     
+     
+    &:hover{
+        .image-part{
+            transition: 30s ease-in-out;
+            background-position: bottom;
+        }
+        h2{
+            .line{
+                width: 100%;
+            }
+        }
+    }
+    .image-part{
+        border-radius: 5px;
+        width: 100%;
+        height: 380px;
+        background-size: 100%;
+        background-position: top;
+        transition: 20s ease-in-out;
+        @media(max-width:1121px){
+            height: 280px;
+        }
+
+    }
+    h2{
+      
+        font-weight: 500;
+        margin-top: 10px;
+        padding-bottom: 15px;
+        position: relative;
+      text-align: left;
+     
+       .line{
+            position: absolute;
+            width: 0%;
+            height: 7px;
+            background-color: #ff5887c9;
+            bottom: 0;
+            left: 0;
+            content: '';
+            transition: .7s ease-in-out;
+        }
+    }
+}
+@media(max-width:500px){
+    .work-card{
+        width: 90%;
+        h2{
+            font-size: 18px;
+        }
+    }
+}
