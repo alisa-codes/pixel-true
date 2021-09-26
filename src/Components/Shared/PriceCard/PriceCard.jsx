@@ -4,7 +4,8 @@ import './PriceCard.scss';
 
 function PriceCard(props){
     return(
-        <div className="price-card">
+        <div className="price-card" data-aos="fade-up"
+        data-aos-delay={props.delay}>
             <img src={props.image} />
            <div className="content">
            <h2>{props.title}</h2>

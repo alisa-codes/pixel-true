@@ -14,6 +14,8 @@ import Loading from './Components/Shared/Loader/Loader';
 const Home = lazy(() => import ('./Pages/Home/Home'))
 const CaseStudies = lazy(() => import ('./Pages/CaseStudies/CaseStudies'))
 const Pricing = lazy(() => import ('./Pages/Pricing/Pricing'))
+const OurWork = lazy(() => import ('./Pages/OurWork/OurWork'))
+
 
 
 function App() {
@@ -32,7 +34,8 @@ function App() {
           <Route exact path ='/' component={Home} />
           <Route exact path ='/case-studies' component={CaseStudies} />
           <Route exact path ='/pricing' component={Pricing} />
-
+          <Route exact path ='/our-work' component={OurWork} />
+          
 
         </Switch>
       </Suspense>

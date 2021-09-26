@@ -14,7 +14,8 @@ export const prices = [
         item3:"14 Day Money Back Guarantee!",
         item4:"6+ Hours Daily Design Work ",
         item5:"Project Manager",
-        link:"CONTACT US"
+        link:"CONTACT US",
+        delay:100
     },
     {
         image:price2,
@@ -26,7 +27,9 @@ export const prices = [
         item1:"14 Day Money Back Guarantee!",
         item4:"4+ Hours Daily Design Work ",
         item2:"Project Manager",
-        link:"GET STARTED"
+        link:"GET STARTED",
+        delay:250
+
     },
     {
         image:price3 ,
@@ -38,6 +41,8 @@ export const prices = [
         item2:"14 Day Money Back Guarantee!",
         item1:"2- Hours Daily Design Work ",
         item5:"Project Manager",
-        link:"GET STARTED"
+        link:"GET STARTED",
+        delay:350
+
     },
 ]
