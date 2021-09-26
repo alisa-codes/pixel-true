@@ -1,0 +1,100 @@
+.wall-home{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 2.4rem;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: -30px;
+            right: -50px;
+            width: 90px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-image: url(../../../../Assets/Icons/loveemoji.svg);
+            background-size: 70%;
+            content: '';
+        }
+        span{
+            color: #50b8dc;
+        }
+    }
+    .feedbacks{
+        width: 70%;
+    }
+    .rec.rec-arrow , .rec.rec-arrow:hover , .rec.rec-arrow:focus{
+        border-radius: 0;
+        background-color: rgb(170, 170, 170);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+      border: 1px solid transparent;
+      box-shadow: none;
+      border-radius: 100px;
+    font-size: 30px;
+    }
+    .box{
+        width: 70%;
+        padding: 70px 100px;
+        background-color: #353da31e;
+        border-radius: 10px;
+        margin-top: 50px;
+        height: 100%;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        h3{
+            margin: 12px 0px;
+            font-size: 20px;
+        }
+        p{
+            line-height: 26px;
+        }
+    }
+    button.rec-dot{
+        display: none;
+    }
+}
+@media(max-width:900px){
+    .wall-home{
+        .feedbacks{
+            width: 95%;
+            .box{
+                padding: 50px 30px;
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .wall-home{
+        padding: 20px 0px;
+        h1{
+            font-size: 22px;
+        }
+        .rec.rec-arrow{
+            display: none;
+        }
+        .feedbacks{
+            width: 100%;
+            .box{
+                text-align: left;
+                width: 100%;
+                padding: 50px 5px;
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

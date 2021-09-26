@@ -1,0 +1,62 @@
+.try{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .main-try{
+        width: 70%;
+        padding: 100px 0px;
+        text-align: center;
+        background-image: url(../../../Assets/backgrounds/tryBg.png);
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        p{
+            margin-top: 10px;
+        }
+        a,p{
+            color: rgb(230, 224, 224);
+            font-size: 20px;
+            
+        }
+        .styled-button{
+            margin-top: 30px;
+           button{
+            padding: 22px 70px;
+           }
+        }
+
+
+    }
+}
+@media(max-width:900px){
+    .try{
+        .main-try{
+            width: 97%;
+        }
+    }
+}
+@media(max-width:500px){
+    .try{
+        .main-try{
+            padding: 50px 0px;
+            background-position:center;
+            h1{
+                font-size: 24px;
+            }
+            a,p{
+                font-size: 17px;
+            }
+            .styled-button{
+                button{
+                    padding: 15px 50px;
+                }
+            }
+        }
+    }
+}

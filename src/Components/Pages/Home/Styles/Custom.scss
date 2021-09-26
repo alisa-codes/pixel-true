@@ -1,0 +1,38 @@
+.custom-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    h1{
+        font-size: 2.4rem;
+        span{
+            color: #50b8dc;
+        }
+    }
+    p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .demos{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+}
+@media(max-width:500px){
+    .custom-home{
+        padding: 50px 0px;
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .demos{
+            margin-top: 40px;
+        }
+    }
+}

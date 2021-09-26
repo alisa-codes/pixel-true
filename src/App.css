@@ -1,7 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Sans',sans-serif;
+ 
+}
+body,html{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
+  background-color: #0f123d;
+  color: white;
+  position: relative;
 }
-
+body{
+  position: relative;
+}
+p{
+  color: rgba(212,214,255,.95);
+}
+li{
+  list-style: none;
+}
+h1{
+  font-weight: 550;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
