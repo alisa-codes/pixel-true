@@ -1,6 +1,6 @@
 import React from 'react';
 import {Tabs,TabList,Tab,TabPanel} from 'react-tabs'
-import { works1 } from './data';
+import { works1, works2,works3, works4, works5 } from './data';
 import Panel from './Panel';
 import './Styles/Works.scss';
 
@@ -20,6 +20,21 @@ function Works(){
                     </TabList>
                     <TabPanel>
                       <Panel list={works1}/>
+                    </TabPanel>
+                    <TabPanel>
+                      <Panel list={works2}/>
+                    </TabPanel>
+                    <TabPanel>
+                      <Panel list={works3}/>
+                    </TabPanel>
+                    <TabPanel>
+                      <Panel list={works1}/>
+                    </TabPanel>
+                    <TabPanel>
+                      <Panel list={works4}/>
+                    </TabPanel>
+                    <TabPanel>
+                      <Panel list={works5}/>
                     </TabPanel>
                 </Tabs>
             </div>
