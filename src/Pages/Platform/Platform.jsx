@@ -1,11 +1,13 @@
-import React,{useEffect} from 'react';
-import Cases from '../../Components/Pages/CaseStudies/Cases';
-import Wall from '../../Components/Pages/Home/Wall';
-import Header from '../../Components/Shared/Header/Header';
-import Try from '../../Components/Shared/Try/Try';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-function CaseStudies(){
+import React,{useEffect} from 'react';
+import Banner from '../../Components/Pages/Platform/Banner';
+import Parts from '../../Components/Pages/Platform/Parts';
+import Header from '../../Components/Shared/Header/Header';
+import Wall from '../../Components/Pages/Home/Wall';
+import Try from '../../Components/Shared/Try/Try';
+
+function Platform(){
     useEffect(() => {
         AOS.init({
           duration: 800,
@@ -16,10 +18,11 @@ function CaseStudies(){
     return(
         <>
         <Header />
-        <Cases />
+        <Banner />
+        <Parts />
         <Wall />
         <Try />
         </>
     )
 };
-export default CaseStudies ;
+export default Platform ;

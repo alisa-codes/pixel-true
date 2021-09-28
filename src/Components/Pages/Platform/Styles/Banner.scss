@@ -1,4 +1,4 @@
-.banner-home{
+.platform-banner{
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,11 +9,24 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url(../../../../Assets/backgrounds/banner.webp);
+    background-image: url(../../../../Assets/backgrounds/platformbanner.webp);
     position: relative;
     z-index: 1;
-    
-   
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        content: '';
+        background-color: #0f123d98;
+    }
+   .styled-button{
+        button{
+            padding: 17px 65px;
+        }
+   }
  
     h1{
         font-size: 3rem;
@@ -28,14 +41,14 @@
     }
 }
 @media(max-width:1410px){
-    .banner-home{
+    .platform-banner{
         h1,p{
             width: 65%;
         }
     }
 }
 @media(max-width:700px){
-    .banner-home{
+    .platform-banner{
         h1,p{
             width: 98%;
         }
@@ -43,7 +56,7 @@
     }
 }
 @media(max-width:500px){
-    .banner-home{
+    .platform-banner{
         padding: 150px 10px;
         padding-top: 200px;
         background-attachment: unset;

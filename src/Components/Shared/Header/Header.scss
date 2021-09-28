@@ -34,11 +34,40 @@
         @media(max-width:900px){
             display: none;
         }
+        .styled-button{
+            a{
+                &::after{
+                    background:none;
+                }
+            }
+        }
         a{
             margin: 0px 20px;
             font-size: 17px;
-           
+            position: relative;
             letter-spacing: 0.5px;
+            &.is-active{
+                &::after{
+                    width: 100% ;
+                }
+            }
+            &::after{
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #F5374D;
+                content: '';
+                transition: .5s ease-in-out;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                transition: .5s ease-in-out;
+
+                }
+            }
             @media(max-width:1200px){
                 margin: 0px 8px;
                 font-size: 16px;

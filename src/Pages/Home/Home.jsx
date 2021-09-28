@@ -7,10 +7,19 @@ import Works from "../../Components/Pages/Home/Works";
 import Header from "../../Components/Shared/Header/Header";
 import Loading from "../../Components/Shared/Loader/Loader";
 import Try from "../../Components/Shared/Try/Try";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React,{useEffect} from 'react';
 
 
 function Home(){
+    useEffect(() => {
+        AOS.init({
+          duration: 800,
+          disable: 'mobile',
+          once: true,
+        });
+      }, []);
     return(
         <>
        

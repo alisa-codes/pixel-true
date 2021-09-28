@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import './Header.scss';
 import logo from '../../../Assets/Icons/logo.svg';
 import throttle from "lodash.throttle";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import StyledButton from '../StyledButton/StyledButton';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
@@ -36,24 +36,36 @@ function Header(props){
        </div>
        </Link>
        <div className="main-links">
-           <Link to="case-studies">
+           <NavLink 
+           activeClassName="is-active"
+            to="case-studies">
               Case Studies
-           </Link>
-           <Link to="pricing">
+           </NavLink>
+           <NavLink
+           activeClassName="is-active"
+            to="pricing">
                Pricing
-           </Link>
-           <Link to="our-work">
+           </NavLink>
+           <NavLink
+            activeClassName="is-active"
+            to="our-work">
                Our Work
-           </Link>
-           <Link to="our-platform">
+           </NavLink>
+           <NavLink
+            activeClassName="is-active"
+           to="our-platform">
                Our Platform
-           </Link>
-           <Link to="more">
+           </NavLink>
+           <NavLink
+           activeClassName="is-active"
+            to="more">
             More
-           </Link>
-           <Link to="login">
+           </NavLink>
+           <NavLink
+           activeClassName="is-active"
+            to="login">
              Login
-           </Link>
+           </NavLink>
            <StyledButton link="Schedule Demo"/>
        </div>
         </div>

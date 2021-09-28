@@ -11,10 +11,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Loading from './Components/Shared/Loader/Loader';
+import ScrollToTop from './ScrollToTop';
 const Home = lazy(() => import ('./Pages/Home/Home'))
 const CaseStudies = lazy(() => import ('./Pages/CaseStudies/CaseStudies'))
 const Pricing = lazy(() => import ('./Pages/Pricing/Pricing'))
 const OurWork = lazy(() => import ('./Pages/OurWork/OurWork'))
+const Platform = lazy(() => import ('./Pages/Platform/Platform'))
+
 
 
 
@@ -28,6 +31,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+         <ScrollToTop />
     <Router>
       <Suspense fallback={<Loading />}>
         <Switch>
@@ -35,7 +39,8 @@ function App() {
           <Route exact path ='/case-studies' component={CaseStudies} />
           <Route exact path ='/pricing' component={Pricing} />
           <Route exact path ='/our-work' component={OurWork} />
-          
+          <Route exact path ='/our-platform' component={Platform} />
+          <Redirect to="/" />
 
         </Switch>
       </Suspense>
